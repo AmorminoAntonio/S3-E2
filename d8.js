@@ -56,8 +56,12 @@ addToTheSecond();
   */
 
 const addParagraph = function () {
-    
+  const firstDiv = document.querySelector("div");
+  const nuovoParaDiv = document.createElement("p");
+  nuovoParaDiv.innerText = "Questo è il paragrafo aggiuntivo";
+  firstDiv.appendChild(nuovoParaDiv);
 };
+addParagraph();
 
 /* ESERCIZIO 7
      Scrivi una funzione che faccia scomparire la prima lista non ordinata
